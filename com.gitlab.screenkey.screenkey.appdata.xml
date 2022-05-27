@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com-gitlab-screenkey-screenkey.desktop</id>
+  <id>com.gitlab.screenkey.screenkey.desktop</id>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
   <name>Screenkey</name>
