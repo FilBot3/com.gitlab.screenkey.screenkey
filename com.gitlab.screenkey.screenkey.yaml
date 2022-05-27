@@ -1,7 +1,7 @@
 ---
 app-id: com.gitlab.screenkey.screenkey
 runtime: org.gnome.Platform
-runtime-version: '3.38'
+runtime-version: '42'
 sdk: org.gnome.Sdk
 command: screenkey
 rename-desktop-file: screenkey.desktop
@@ -15,7 +15,7 @@ modules:
   - name: screenkey
     buildsystem: simple
     ensure-writable:
-      - /lib/python3.8/site-packages/easy-install.pth
+      - /app/lib/python3.8/site-packages/easy-install.pth
     build-commands:
       - python3 setup.py build
       - python3 setup.py install --skip-build --prefix=/app
@@ -25,8 +25,8 @@ modules:
       - type: archive
         url: https://gitlab.com/screenkey/screenkey/-/archive/v1.3/screenkey-v1.3.tar.gz
         sha256: 2917176ab74de25758a3feaf7724dd3362dcc4169dea0c77f5c10c7477202f45
-      - type: dir
-        path: resources
+      - type: file
+        path: com.gitlab.screenkey.screenkey.appdata.xml
     modules:
       - name: python-distutils-extra
         buildsystem: simple
@@ -39,7 +39,8 @@ modules:
         cleanup:
           - '*'
         modules:
-          - ../flathub-shared-modules/intltool/intltool-0.51.json
+          - shared-modules/intltool/intltool-0.51.json
+
       - name: slop
         buildsystem: cmake
         config-opts:
@@ -56,8 +57,6 @@ modules:
           - /include
           - /share
         modules:
-          - ../flathub-shared-modules/glew/glew.json
-          - ../flathub-shared-modules/glu/glu-9.json
-          # not helping with statusnotifier
-     #- ../flathub-shared-modules/libappindicator/libappindicator-gtk3-12.10.json
+          - shared-modules/glew/glew.json
+          - shared-modules/glu/glu-9.json
 ...

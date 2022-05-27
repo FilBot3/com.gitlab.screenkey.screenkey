@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020 Yuri D'Elia -->
 <component type="desktop-application">
   <id>com-gitlab-screenkey-screenkey.desktop</id>
   <metadata_license>FSFAP</metadata_license>
