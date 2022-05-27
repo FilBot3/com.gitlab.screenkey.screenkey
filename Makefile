@@ -27,4 +27,4 @@ install: package
 	flatpak --user install $(flatpak_name).flatpak --assumeyes
 
 clean:
-	rm -rf repo tags.lock tags.temp test tags *.flatpak
+	rm -rf repo tags.lock tags.temp test tags *.flatpak .flatpak-builder
