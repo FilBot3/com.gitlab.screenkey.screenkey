@@ -54,3 +54,9 @@ make package
 ```bash
 make install
 ```
+
+## Shoutouts
+
+Originally written by [tinywrkb](https://github.com/tinywrkb) and shared on the
+[GitLab Issue 106](https://gitlab.com/screenkey/screenkey/-/issues/106). They
+put a lot of the initial leg work into this repository.
