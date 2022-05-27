@@ -45,6 +45,9 @@ you're using. Probably going to be one of `dnf` or `apt`.
 
 ## Building
 
+Make sure to build this on a Linux supported filesystem. The `NTFS` filesystem
+is not going to work. You'll need to use BTRFS, ZFS, XFS, or EXT4 or something.
+
 ### Build the application
 
 ```bash
