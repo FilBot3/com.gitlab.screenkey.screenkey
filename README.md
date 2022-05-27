@@ -63,6 +63,14 @@ make package
 make install
 ```
 
+### If the build fails...
+
+If the build fails, you should be able to clean the repository, then rebild.
+
+```bash
+make clean deps build package install
+```
+
 ## Shoutouts
 
 Originally written by [tinywrkb](https://github.com/tinywrkb) and shared on the
