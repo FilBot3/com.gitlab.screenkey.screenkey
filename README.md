@@ -26,6 +26,14 @@ who prefer to have Flatpaks, this is an ideal situation.
 
 ## Setup
 
+Clone the repository and it's submodules.
+
+```bash
+git clone https://github.com/FilBot3/com.gitlab.screenkey.screenkey.git
+git submodule init
+git submodule update
+```
+
 Download the Flatpak dependencies for building.
 
 ```bash
