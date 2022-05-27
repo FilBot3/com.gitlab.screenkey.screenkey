@@ -3,6 +3,8 @@
 flatpak_name := com.gitlab.screenkey.screenkey
 
 deps:
+	git submodule init
+	git submodule update
 	flatpak --user install org.gnome.Platform//42 org.gnome.Sdk//42 --assumeyes
 
 build:
